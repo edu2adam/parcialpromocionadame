@@ -30,7 +30,7 @@ public class SocioService {
         }
         Socio socio = new Socio();
         socio.setNombre(dto.getNombre());
-        socio.setApellido(dto.getApellido());
+        socio.setApellido(dto.getApellido()); 
         socio.setDni(dto.getDni());
         Socio guardado = socioRepository.save(socio);
         return convertirAResponse(guardado);
